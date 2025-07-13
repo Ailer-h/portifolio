@@ -12,6 +12,27 @@ const INFORMATION = {
             "pt": "Você pode me encontrar aqui!",
             "en": "You can find me here!"
         }
+    },
+    
+    "exp": {
+        "title": {
+            "pt": "Experiência",
+            "en": "Experience"
+        }
+    },
+
+    "projects": {
+        "title": {
+            "pt": "Projetos",
+            "en": "Projects"
+        }
+    },
+    
+    "edu": {
+        "title": {
+            "pt": "Educação",
+            "en": "Education"
+        }
     }
 
 }
@@ -46,8 +67,10 @@ function change_text(language) {
 function toggle_language() {
     if (lang == "pt") {
         lang = "en"
+        $(".see-more p").text("See all")
     } else {
         lang = "pt"
+        $(".see-more p").text("Ver tudo")
     }
 
     $("#lang_btn span").css({ "font-weight": "300" })
