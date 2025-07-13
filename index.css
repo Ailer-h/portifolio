@@ -132,12 +132,12 @@ section{
 .home-banner h1{
     font-weight: bold;
     
-    font-size: 4.5em;
+    font-size: 3.5em;
 }
 
 .home-banner h2{
     font-weight: normal;
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 
@@ -179,7 +179,7 @@ section{
 }
 
 #whatsapp:hover > g{
-    fill: #1b8755;
+    fill: #3bb97c;
     transition: 200ms;
 }
 
