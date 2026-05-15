@@ -1,6 +1,10 @@
 const MainContent = () => {
 
-    return <></>
+    return <>
+        <section id="mainContent">
+            
+        </section>
+    </>
 
 }
 
