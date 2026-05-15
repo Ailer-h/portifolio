@@ -1,0 +1,120 @@
+div.sidebar {
+
+    width: 250px;
+    height: 100vh;
+
+    border-right: 1px solid var(--lines);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+div.sidebar .header {
+
+    height: 56px;
+
+    border-bottom: 1px solid var(--lines);
+
+    padding: 8px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+div.sidebar .header h1 {
+
+    font-size: 1.5em;
+
+}
+
+div.sidebar .main-content {
+    
+    flex-grow: 1;
+    padding: 8px 16px;
+    
+}
+
+div.sidebar .main-content .section-icon {
+    
+    margin: 24px 0;
+    padding: 0 8px;
+
+    font-size: 1.5em;
+    border-radius: 8px;
+    
+    display: flex;
+    align-items: center;
+    
+    gap: 12px;
+    height: 48px;
+    
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+div.sidebar .main-content .section-icon:hover {
+
+    background-color: var(--bg-secondary);
+
+}
+
+div.sidebar .main-content .section-icon svg {
+
+    width: 24px;
+    height: 24px;
+
+}
+
+div.sidebar .footer {
+    
+    padding: 8px 16px;
+
+    height: 80px;
+    border-top: 1px solid var(--lines);
+
+    text-align: center;
+    
+}
+
+div.sidebar .footer hr {
+
+    border: none;
+    height: 1px;
+
+    background-color: var(--lines);
+
+    width: calc(100% - 32px);
+
+    margin: 16px 16px;
+
+}
+
+div.sidebar .footer .icons {
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+
+}
+
+div.sidebar .footer .icons svg {
+    
+    width: 32px;
+    height: 32px;
+    
+    fill: var(--font-secondary);
+    cursor: pointer;
+    
+}
+
+div.sidebar .footer .icons svg:hover {
+
+    fill: var(--font-default);
+
+}
