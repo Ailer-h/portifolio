@@ -10,6 +10,10 @@
   --font-default: hsl(0, 0%, 95%);
   --font-secondary: hsl(0, 0%, 80%);
 
+  --accent: #ffcb47;
+  --accent-light: #ffe188;
+  --accent-shade: #ffb620;
+
 }
 
 [data-theme="light"] {
@@ -84,5 +88,125 @@ section {
 section.secondary {
 
   background-color: var(--bg-secondary);
+
+}
+
+button#backToTop {
+
+  position: fixed;
+
+  bottom: 32px;
+  right: 32px;
+
+  width: 64px;
+  height: 64px;
+
+  background-color: var(--accent);
+
+  border: none;
+  border-radius: 16px;
+
+  transition: 100ms ease-in-out;
+
+}
+
+button#backToTop:hover {
+
+  background-color: var(--accent-shade);
+
+  transition: 100ms ease-in-out;
+
+}
+
+button#backToTop svg {
+  
+  fill: black;
+
+  width: 32px;
+  height: 32px;
+
+  cursor: pointer;
+
+}
+
+div#buttons {
+  
+  display: flex;
+  gap: 16px;
+  
+}
+
+div#buttons a {
+
+  text-decoration: none;
+
+}
+
+button.primary {
+  
+  background-color: var(--accent);
+  
+  border: none;
+  border-radius: 4px;
+  
+  padding: 8px 16px;
+  
+  color: black;
+  cursor: pointer;
+
+  transition: 100ms ease-in-out;
+  
+}
+
+button.primary:hover {
+
+  background-color: var(--accent-shade);
+
+  transition: 100ms ease-in-out;
+  
+}
+
+button.secondary {
+  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: transparent;
+  border: 1px solid var(--font-default);
+  
+  border-radius: 4px;
+  
+  padding: 8px 16px;
+  
+  color: var(--font-default);
+  cursor: pointer;
+  
+  transition: 100ms ease-in-out;
+  
+}
+
+button.secondary:hover {
+  
+  border: 1px solid transparent;
+  background-color: var(--font-default);
+  color: var(--bg);
+  
+  transition: 100ms ease-in-out;
+  
+}
+
+button.secondary svg {
+  
+  width: 16px;
+  height: 16px;
+  
+  fill: var(--font-default);
+  
+}
+
+button.secondary:hover svg {
+
+  fill: var(--bg);
 
 }

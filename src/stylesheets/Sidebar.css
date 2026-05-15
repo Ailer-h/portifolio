@@ -140,28 +140,3 @@ div.sidebar .footer hr {
     margin: 16px 16px;
 
 }
-
-div.sidebar .footer .icons {
-
-    display: flex;
-
-    justify-content: space-evenly;
-
-
-}
-
-div.sidebar .footer .icons svg {
-    
-    width: 24px;
-    height: 24px;
-    
-    fill: var(--font-secondary);
-    cursor: pointer;
-    
-}
-
-div.sidebar .footer .icons svg:hover {
-
-    fill: var(--font-default);
-
-}
