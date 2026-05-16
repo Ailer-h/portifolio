@@ -4,11 +4,14 @@
 
   --bg: hsl(0, 0%, 5%);
   --bg-secondary: hsl(0, 0%, 10%);
+  --bg-tertiary: hsl(0, 0%, 15%);
 
   --lines: hsl(0, 0%, 15%);
 
   --font-default: hsl(0, 0%, 95%);
   --font-secondary: hsl(0, 0%, 80%);
+
+  --box-shadow: rgba(0, 0, 0, 0.315) 0px 3px 8px;
 
   --accent: #ffcb47;
   --accent-light: #ffe188;
@@ -20,11 +23,14 @@
 
   --bg: hsl(0, 0%, 95%);
   --bg-secondary: hsl(0, 0%, 90%);
+  --bg-tertiary: hsl(0, 0%, 85%);
 
   --lines: hsl(0, 0%, 85%);
 
   --font-default: hsl(0, 0%, 5%);
   --font-secondary: hsl(0, 0%, 20%);
+
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
 
