@@ -41,15 +41,43 @@ section#projects .project-grid .grid-item .content {
 
     flex-grow: 1;
 
+    overflow: visible;
+
+    padding: 8px;
+
+}
+
+section#projects .project-grid .grid-item .content p {
+
+    font-size: 1em;
+
 }
 
 section#projects .project-grid .grid-item .options {
-
+    
     display: flex;
-
-    justify-content: end;
-
+    
+    justify-content: space-between;
+    
     padding: 8px;
+    
+}
+
+section#projects .project-grid .grid-item .options .tags {
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    
+}
+
+section#projects .project-grid .grid-item .options .tags > * {
+
+    font-size: 0.75em;
+    padding: 4px;
+    background-color: var(--bg);
+    border-radius: 4px;
 
 }
 
@@ -74,9 +102,11 @@ section#projects .project-grid .grid-item .options button:hover {
 }
     
 section#projects .project-grid .grid-item .banner {
-    
-    height: 50%;
+
+    height: 150px;
+    flex-shrink: 0;
     background-size: cover;
+    background-position: center;
     position: relative;
 
     padding: 8px 16px;
@@ -91,6 +121,7 @@ section#projects .project-grid .grid-item .banner h1 {
     z-index: 1;
     font-size: 1.5em;
     font-weight: normal;
+    color: hsl(0, 0%, 95%); 
 }
 
 section#projects .project-grid .grid-item .banner::after {

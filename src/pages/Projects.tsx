@@ -1,21 +1,24 @@
 import ProjectCard from "../components/ProjectCard"
 import "../stylesheets/Projects.css"
 
-import drachma from "../assets/banners/drachma.png"
-import pastelaria from "../assets/banners/pastelaria.jpg"
-import erp from "../assets/banners/erp_simulator.png"
-
+import { projects } from "../content/projects"
+import { useUserPreferences } from "../context/UserPreferencesContext"
 
 const Projects = () => {
 
+    const { language, t } = useUserPreferences()
+
     return <>
         <section id="projects" className="secondary">
-            <h1>Projects</h1>
+            <h1>{t('nav.projects')}</h1>
 
             <div className="project-grid">
-                <ProjectCard bannerSrc={drachma} projectTitle="Drachma"/>
-                <ProjectCard bannerSrc={pastelaria} projectTitle="Gerenciamento de Pastelaria"/>
-                <ProjectCard bannerSrc={erp} projectTitle="Simulador de ERP"/>
+                {
+                    projects.map((project, index) => {
+                        const content = project.content[language]
+                        return <ProjectCard key={index} bannerSrc={project.banner} projectTitle={content.name} techUsed={project.techUsed} headline={content.headline} />
+                    })
+                }
             </div>
 
         </section>

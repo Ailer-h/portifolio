@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react'
-import { translations, type Language } from '../translations'
+import { translations, type Language } from '../content'
 
 export type Theme = 'light' | 'dark'
 
