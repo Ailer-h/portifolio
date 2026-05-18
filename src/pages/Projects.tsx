@@ -10,7 +10,7 @@ const Projects = () => {
 
     return <>
         <section id="projects" className="secondary">
-            <h1>{t('nav.projects')}</h1>
+            <h1 className="section-title">{t('nav.projects')}</h1>
 
             <div className="project-grid">
                 {

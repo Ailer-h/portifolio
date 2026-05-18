@@ -7,6 +7,8 @@ const MainContent = () => {
 
     const { language, t } = useUserPreferences()
 
+    const YEARS_OF_EXPERIENCE = new Date().getFullYear() - 2022;
+
     return <>
         <section id="mainContent">
             <div className="hero">
@@ -20,7 +22,7 @@ const MainContent = () => {
                         {t('main.location')}
                     </p>
                     <p id="description">
-                        {t('main.description')}
+                        {t('main.description').replace("[YEARS_OF_EXPERIENCE]", YEARS_OF_EXPERIENCE.toString())}
                     </p>
                     <hr />
                     <div id="buttons">

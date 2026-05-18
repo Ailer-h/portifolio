@@ -88,7 +88,15 @@ main {
 section {
   
   min-height: 100vh;
+  padding: 16px 32px;
+  overflow-y: auto;
   
+}
+
+section h1.section-title {
+
+  text-align: center;
+
 }
 
 section.secondary {

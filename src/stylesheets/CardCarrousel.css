@@ -1,0 +1,70 @@
+div.carrousel {
+    
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 16px 0;
+    margin: 8px 0;
+
+    gap: 16px;
+
+    overflow-x: auto;
+    
+}
+
+div.carrousel .card {
+    
+    width: 200px;
+    min-width: 200px;
+    
+    background-color: var(--bg-secondary);
+    
+    box-shadow: var(--box-shadow);
+    
+    border-radius: 8px;
+
+    padding: 8px;
+    
+}
+
+div.carrousel .card h3 {
+    
+    font-size: 1em;
+    
+}
+
+div.carrousel .card hr {
+    
+    margin: 8px 0;
+    
+}
+
+div.carrousel .card span {
+    
+    margin-left: 8px;
+    font-size: .75em;
+    
+}
+
+div.carrousel .card .barholder {
+    
+    width: 180px;
+    height: 8px;
+    
+    margin: 8px 0;
+    
+    background-color: var(--bg-tertiary);
+    border-radius: 4px;
+    
+}
+
+div.carrousel .card .barholder .bar {
+
+    height: 8px;
+    border-radius: 4px;
+
+    background-color: var(--accent);
+
+}
