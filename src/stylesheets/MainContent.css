@@ -4,6 +4,8 @@ section#mainContent {
     justify-content: center;
     align-items: center;
 
+    overflow: hidden;
+
 }
 
 section#mainContent .hero {

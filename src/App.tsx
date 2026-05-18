@@ -10,6 +10,7 @@ import Contact from './pages/ContactInfo'
 import MainContent from './pages/MainContent'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
+import Footer from './components/Footer'
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false)
@@ -35,6 +36,7 @@ function App() {
           <Certifications/>
           <Awards/>
           <Contact/>
+          <Footer/>
 
         </main>
       </div>

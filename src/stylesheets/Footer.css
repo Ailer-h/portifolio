@@ -1,0 +1,76 @@
+footer {
+
+    height: 250px;
+    background-color: var(--bg);
+    padding: 16px 128px;
+    border-top: 1px solid var(--lines);
+    
+}
+footer .cols {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 32px;
+
+}
+
+footer .cols div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    width: 250px;
+
+}
+
+footer .cols div h1 {
+    
+    font-size: 1.5em;
+    font-weight: 600;
+    
+}
+
+footer .cols div p, li {
+    
+    font-size: .75em;
+    color: var(--font-secondary);
+
+    line-height: 24px;
+    
+}
+
+footer .cols div li {
+    
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    
+}
+
+footer .cols div li:hover {
+    color: var(--font-default);
+}
+
+footer a {
+
+    text-decoration: none;
+
+}
+
+footer .credits {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .credits p {
+
+    font-size: .75em;
+    color: var(--font-secondary);
+
+}

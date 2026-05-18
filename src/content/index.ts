@@ -12,6 +12,15 @@ export const translations = {
     },
     footer: {
       contactMe: 'Contact me',
+      tagline: 'Full-stack Developer bringing innovation in tools with real impact.',
+      quickLinks: 'Quick Links',
+      contact: 'Contact',
+      rights: 'All rights reserved.',
+      builtWith: 'Built with React and TypeScript.',
+    },
+    contactInfo: {
+      findMe: 'You can find me here:',
+      phone: 'Phone',
     },
     main: {
       greeting: "Hi, I'm",
@@ -72,6 +81,15 @@ export const translations = {
     },
     footer: {
       contactMe: 'Fale comigo',
+      tagline: 'Desenvolvedor full-stack trazendo inovação em ferramentas com impacto real.',
+      quickLinks: 'Links Rápidos',
+      contact: 'Contato',
+      rights: 'Todos os direitos reservados.',
+      builtWith: 'Desenvolvido com React e Typescript.',
+    },
+    contactInfo: {
+      findMe: 'Você pode me encontrar aqui:',
+      phone: 'Telefone',
     },
     main: {
       greeting: 'Olá, eu sou',
