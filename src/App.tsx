@@ -30,15 +30,10 @@ function App() {
 
         <main ref={mainRef}>
           <MainContent/>
-          <hr/>
           <Projects/>
-          <hr/>
           <Skills/>
-          <hr/>
           <Certifications/>
-          <hr/>
           <Awards/>
-          <hr/>
           <Contact/>
 
         </main>

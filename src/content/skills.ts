@@ -1,7 +1,10 @@
+export type LevelKey = 'fluent' | 'advanced' | 'intermediate' | 'beginner' | 'basic'
+
 export interface Skill {
     skill: string
+    translationKey?: string
     level: {
-        label: string
+        label: LevelKey
         cefr?: "A1" | "A2" | "B1" | "B2" | "C1" | "C2"
         number: number
     }
@@ -13,42 +16,42 @@ export const skills: Record<string, Skill[]> = {
         {
             skill: "Python",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 number: 5
             }
         },
         {
             skill: "PHP",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 number: 5
             }
         },
         {
             skill: "Typescript",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 number: 4
             }
         },
         {
             skill: "JavaScript",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 number: 4
             }
         },
         {
             skill: "Java",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 number: 4
             }
         },
         {
             skill: "C++",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 number: 4
             }
         },
@@ -58,49 +61,49 @@ export const skills: Record<string, Skill[]> = {
         {
             skill: "HTML",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 number: 5
             }
         },
         {
             skill: "CSS",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 number: 5
             }
         },
         {
             skill: "Bootstrap",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 number: 4
             }
         },
         {
             skill: "jQuery",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 number: 5
             }
         },
         {
             skill: "React.js",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 number: 3
             }
         },
         {
             skill: "FastAPI",
             level: {
-                label: "Basic",
+                label: "basic",
                 number: 1
             }
         },
         {
             skill: "Django",
             level: {
-                label: "Basic",
+                label: "basic",
                 number: 1
             }
         },
@@ -110,14 +113,14 @@ export const skills: Record<string, Skill[]> = {
         {
             skill: "Git",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 number: 5
             }
         },
         {
             skill: "Docker",
             level: {
-                label: "Begginer",
+                label: "beginner",
                 number: 2
             }
         },
@@ -126,32 +129,36 @@ export const skills: Record<string, Skill[]> = {
     languages: [
         {
             skill: "Portuguese",
+            translationKey: "portuguese",
             level: {
-                label: "Fluent",
+                label: "fluent",
                 cefr: "C2",
                 number: 5
             }
         },
         {
             skill: "English",
+            translationKey: "english",
             level: {
-                label: "Advanced",
+                label: "advanced",
                 cefr: "C1",
                 number: 5
             }
         },
         {
             skill: "Italian",
+            translationKey: "italian",
             level: {
-                label: "Intermediate",
+                label: "intermediate",
                 cefr: "B1",
                 number: 3
             }
         },
         {
             skill: "Spanish",
+            translationKey: "spanish",
             level: {
-                label: "Basic",
+                label: "basic",
                 cefr: "A2",
                 number: 2
             }

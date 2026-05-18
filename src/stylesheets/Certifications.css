@@ -1,0 +1,42 @@
+section#certifications .overview {
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    margin: 16px 0;
+
+}
+
+section#certifications .overview > * {
+    
+    width: 250px;
+    height: 200px;
+    
+    background-color: var(--bg-tertiary);
+    
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: bold;
+
+}
+
+section#certifications .overview span {
+    
+    font-size: 2em;
+
+}
+
+section#certifications .overview p {
+
+    font-size: 1em;
+
+}
