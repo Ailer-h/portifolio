@@ -33,7 +33,7 @@ const Footer = () => {
                     <a href="https://maps.app.goo.gl/RwrQJFzd9NMif8Zz5" target="_blank">
                         <li>{t('main.location')}</li>
                     </a>
-                    <li onClick={(e) => copy((e.target as HTMLElement).innerText)}>+55 (19) 98151-6918</li>
+                    <li onClick={() => copy("+55 (19) 98151-6918", `${t('contactInfo.phone')} ${t('contactInfo.copiedToClipboard')}`)}>+55 (19) 98151-6918</li>
                     <a href="mailto:ailerhenrique@gmail.com" target="_blank">
                         <li>ailerhenrique@gmail.com</li>
                     </a>

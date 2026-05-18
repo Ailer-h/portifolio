@@ -21,6 +21,7 @@ export const translations = {
     contactInfo: {
       findMe: 'You can find me here:',
       phone: 'Phone',
+      copiedToClipboard: 'copied to clipboard',
     },
     main: {
       greeting: "Hi, I'm",
@@ -90,6 +91,7 @@ export const translations = {
     contactInfo: {
       findMe: 'Você pode me encontrar aqui:',
       phone: 'Telefone',
+      copiedToClipboard: 'copiado para a área de transferência',
     },
     main: {
       greeting: 'Olá, eu sou',
