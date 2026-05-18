@@ -50,6 +50,16 @@ export const translations = {
       showCredential: 'Show Credential',
       dateLocale: 'en-US',
     },
+    awards: {
+      outstandingStudent: {
+        name: 'Outstanding Student',
+        headline: 'Recognized as top-performing student in the Python & AI program (SIC 2022) based on academic performance and project quality.',
+      },
+      firstPlaceEngineering: {
+        name: '1st place in Engineering',
+        headline: 'Won first place in the Engineering category among 30+ competing projects with "CIA Virtual" — an AI-powered robot designed to reduce loneliness among elderly residents in care homes.',
+      },
+    },
   },
   pt: {
     nav: {
@@ -99,6 +109,16 @@ export const translations = {
       expiresOn: 'Expira em',
       showCredential: 'Ver Credencial',
       dateLocale: 'pt-BR',
+    },
+    awards: {
+      outstandingStudent: {
+        name: 'Aluno Destaque',
+        headline: 'Reconhecido como o aluno de melhor desempenho no programa de Python & IA (SIC 2022), com base no rendimento acadêmico e na qualidade do projeto.',
+      },
+      firstPlaceEngineering: {
+        name: '1º lugar em Engenharia',
+        headline: 'Conquistou o primeiro lugar na categoria de Engenharia entre mais de 30 projetos concorrentes com o "CIA Virtual" — um robô com IA projetado para reduzir a solidão entre idosos em lares de cuidado.',
+      },
     },
   },
 } as const

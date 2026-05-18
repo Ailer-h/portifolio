@@ -1,4 +1,4 @@
-import CertificationList from "../components/CertificationList"
+import CertificationList from "../components/CardList"
 import { useUserPreferences } from "../context/UserPreferencesContext"
 import "../stylesheets/Certifications.css"
 

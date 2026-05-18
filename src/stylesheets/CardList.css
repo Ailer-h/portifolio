@@ -1,4 +1,4 @@
-div.certificationList {
+div.cardList {
     
     max-height: 100vh;
 
@@ -15,7 +15,7 @@ div.certificationList {
     
 }
 
-div.certificationList .certification {
+div.cardList .card {
     
     height: 200px;
     min-height: 200px;
@@ -34,7 +34,7 @@ div.certificationList .certification {
     
 }
 
-div.certificationList .certification img {
+div.cardList .card img {
     
     border-radius: 8px 0 0 8px;
 
@@ -45,32 +45,32 @@ div.certificationList .certification img {
 }
 
 
-div.certificationList .certification div.info {
+div.cardList .card div.info {
     
     padding: 16px;
 
 }
 
-div.certificationList .certification div.info h3, h2 {
+div.cardList .card div.info h3, h2 {
     
     font-size: 1em;
     
 }
 
-div.certificationList .certification div.info p {
+div.cardList .card div.info p {
 
     margin-top: 8px;
     font-size: .75em;
 
 }
 
-div.certificationList .certification div.info hr {
+div.cardList .card div.info hr {
     
     background-color: var(--lines-secondary);
     
 }
 
-div.certificationList .certification div.info a {
+div.cardList .card div.info a {
     
     position: absolute;
     
@@ -96,7 +96,7 @@ div.certificationList .certification div.info a {
     
 }
 
-div.certificationList .certification div.info a:hover {
+div.cardList .card div.info a:hover {
     
     background-color: var(--accent-shade);
     
@@ -104,11 +104,18 @@ div.certificationList .certification div.info a:hover {
     
 }
 
-div.certificationList .certification div.info a svg {
+div.cardList .card div.info a svg {
 
     width: 12px;
     height: 12px;
 
     fill: hsl(0, 0%, 5%);
+
+}
+
+div.cardList .card div.info p.headline {
+
+    font-size: 0.75em;
+    margin-top: 8px;
 
 }

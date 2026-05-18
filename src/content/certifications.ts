@@ -4,8 +4,8 @@ import Cisco from "../assets/logos/cisco.webp"
 
 export interface Certification {
 
-    name: string,
-    issuingOrg: string,
+    name: string
+    issuingOrg: string
     issueDate: Date
     logo: string
     expirationDate?: Date
