@@ -15,10 +15,10 @@ const Certifications = () => {
         <div className="overview">
             <div>
                 <span>{certifications.length}</span>
-                <p>Certifications</p>
+                <p>{t('certifications.count')}</p>
             </div>
             <div>
-                <p>Last Certification</p>
+                <p>{t('certifications.lastCertification')}</p>
                 <span>{Math.max(...certifications.map(c => c.issueDate.getFullYear()))}</span>
             </div>
         </div>

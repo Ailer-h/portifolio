@@ -42,6 +42,14 @@ export const translations = {
         spanish: 'Spanish',
       },
     },
+    certifications: {
+      count: 'Certifications',
+      lastCertification: 'Last Certification',
+      issuedOn: 'Issued on',
+      expiresOn: 'Expires on',
+      showCredential: 'Show Credential',
+      dateLocale: 'en-US',
+    },
   },
   pt: {
     nav: {
@@ -83,6 +91,14 @@ export const translations = {
         italian: 'Italiano',
         spanish: 'Espanhol',
       },
+    },
+    certifications: {
+      count: 'Certificações',
+      lastCertification: 'Última Certificação',
+      issuedOn: 'Emitido em',
+      expiresOn: 'Expira em',
+      showCredential: 'Ver Credencial',
+      dateLocale: 'pt-BR',
     },
   },
 } as const
