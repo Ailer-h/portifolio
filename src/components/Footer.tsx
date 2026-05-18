@@ -1,18 +1,11 @@
 import { useUserPreferences } from "../context/UserPreferencesContext"
+import copy from "../lib/copy"
 import ScrollToSection from "../lib/scroll"
 import "../stylesheets/Footer.css"
 
 const Footer = () => {
 
     const { t } = useUserPreferences()
-    
-    const copy = async (text: string) => {
-        try {
-            await navigator.clipboard.writeText(text)
-        } catch (error) {
-            console.log("Error in copy: ", error)
-        }
-    }
     
     return <><footer>
 
@@ -42,7 +35,7 @@ const Footer = () => {
                     </a>
                     <li onClick={(e) => copy((e.target as HTMLElement).innerText)}>+55 (19) 98151-6918</li>
                     <a href="mailto:ailerhenrique@gmail.com" target="_blank">
-                        <li onClick={(e) => copy((e.target as HTMLElement).innerText)}>ailerhenrique@gmail.com</li>
+                        <li>ailerhenrique@gmail.com</li>
                     </a>
                 </ul>
 
