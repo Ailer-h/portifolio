@@ -1,6 +1,6 @@
-import Drachma from "../assets/banners/drachma.png"
-import erpSimulator from "../assets/banners/erp_simulator.png"
-import pastelaria from "../assets/banners/pastelaria.jpg"
+import Drachma from "../assets/banners/drachma.webp"
+import erpSimulator from "../assets/banners/erp_simulator.webp"
+import pastelaria from "../assets/banners/pastelaria.webp"
 
 export const projects = [
     {

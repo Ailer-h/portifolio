@@ -1,25 +1,25 @@
 import { type Skill } from "../content/skills"
 import { useUserPreferences } from "../context/UserPreferencesContext"
-import "../stylesheets/CardCarrousel.css"
+import "../stylesheets/SkillCarrousel.css"
 
-interface CardCarrouselProps {
+interface SkillCarrouselProps {
     elements: Skill[]
 }
 
-const CardCarrousel = ({ elements }: CardCarrouselProps) => {
+const SkillCarrousel = ({ elements }: SkillCarrouselProps) => {
 
     const { t } = useUserPreferences()
 
     return <><div className="carrousel">
 
         {
-            elements.map((element, index) => {
+            elements.map((element) => {
                 const skillName = element.translationKey
                     ? t(`skills.languageNames.${element.translationKey}`)
                     : element.skill
 
                 return <>
-                    <div className="card">
+                    <div className="skill">
                         <h3>{skillName}</h3>
                         <hr />
                         <p>
@@ -38,4 +38,4 @@ const CardCarrousel = ({ elements }: CardCarrouselProps) => {
 
 }
 
-export default CardCarrousel
+export default SkillCarrousel

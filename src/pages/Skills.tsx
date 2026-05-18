@@ -1,11 +1,11 @@
-import CardCarrousel from "../components/CardCarrousel"
+import CardCarrousel from "../components/SkillCarrousel"
 import { useUserPreferences } from "../context/UserPreferencesContext"
 import "../stylesheets/Skills.css"
 import { skills } from "../content/skills"
 
 const Skills = () => {
 
-    const { language, t } = useUserPreferences()
+    const { t } = useUserPreferences()
     
 
     return <><section id="skills">

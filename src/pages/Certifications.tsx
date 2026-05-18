@@ -1,5 +1,8 @@
+import CertificationGrid from "../components/CertificationGrid"
 import { useUserPreferences } from "../context/UserPreferencesContext"
 import "../stylesheets/Certifications.css"
+
+import { certifications } from "../content/certifications"
 
 const Certifications = () => {
 
@@ -11,16 +14,18 @@ const Certifications = () => {
 
         <div className="overview">
             <div>
-                <span>0</span>
+                <span>{certifications.length}</span>
                 <p>Certifications</p>
             </div>
             <div>
                 <p>Last Certification</p>
-                <span>2024</span>
+                <span>{Math.max(...certifications.map(c => c.issueDate.getFullYear()))}</span>
             </div>
         </div>
 
         <hr />
+
+        <CertificationGrid elements={certifications}/>
 
     </section></>
 

@@ -7,6 +7,7 @@
   --bg-tertiary: hsl(0, 0%, 15%);
 
   --lines: hsl(0, 0%, 15%);
+  --lines-secondary: hsl(0, 0%, 25%);
 
   --font-default: hsl(0, 0%, 95%);
   --font-secondary: hsl(0, 0%, 80%);
@@ -26,6 +27,7 @@
   --bg-tertiary: hsl(0, 0%, 85%);
 
   --lines: hsl(0, 0%, 85%);
+  --lines-secondary: hsl(0, 0%, 75%);
 
   --font-default: hsl(0, 0%, 5%);
   --font-secondary: hsl(0, 0%, 20%);
