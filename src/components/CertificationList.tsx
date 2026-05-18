@@ -1,17 +1,17 @@
 import type { Certification } from "../content/certifications"
 import { useUserPreferences } from "../context/UserPreferencesContext"
-import "../stylesheets/CertificationGrid.css"
+import "../stylesheets/CertificationList.css"
 
-interface CertificationGridProps {
+interface CertificationListProps {
     elements: Certification[]
 }
 
-const CertificationGrid = ({ elements }: CertificationGridProps) => {
+const CertificationList = ({ elements }: CertificationListProps) => {
 
     const { t } = useUserPreferences()
     const dateLocale = t('certifications.dateLocale')
 
-    return <><div className="certificationGrid">
+    return <><div className="certificationList">
 
         {
             elements.sort((a, b) => b.issueDate.getTime() - a.issueDate.getTime()).map((element) => {
@@ -54,4 +54,4 @@ const CertificationGrid = ({ elements }: CertificationGridProps) => {
 
 }
 
-export default CertificationGrid
+export default CertificationList

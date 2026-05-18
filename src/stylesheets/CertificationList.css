@@ -1,4 +1,4 @@
-div.certificationGrid {
+div.certificationList {
     
     max-height: 100vh;
 
@@ -15,7 +15,7 @@ div.certificationGrid {
     
 }
 
-div.certificationGrid .certification {
+div.certificationList .certification {
     
     height: 200px;
     min-height: 200px;
@@ -34,7 +34,7 @@ div.certificationGrid .certification {
     
 }
 
-div.certificationGrid .certification img {
+div.certificationList .certification img {
     
     border-radius: 8px 0 0 8px;
 
@@ -45,32 +45,32 @@ div.certificationGrid .certification img {
 }
 
 
-div.certificationGrid .certification div.info {
+div.certificationList .certification div.info {
     
     padding: 16px;
 
 }
 
-div.certificationGrid .certification div.info h3, h2 {
+div.certificationList .certification div.info h3, h2 {
     
     font-size: 1em;
     
 }
 
-div.certificationGrid .certification div.info p {
+div.certificationList .certification div.info p {
 
     margin-top: 8px;
     font-size: .75em;
 
 }
 
-div.certificationGrid .certification div.info hr {
+div.certificationList .certification div.info hr {
     
     background-color: var(--lines-secondary);
     
 }
 
-div.certificationGrid .certification div.info a {
+div.certificationList .certification div.info a {
     
     position: absolute;
     
@@ -96,7 +96,7 @@ div.certificationGrid .certification div.info a {
     
 }
 
-div.certificationGrid .certification div.info a:hover {
+div.certificationList .certification div.info a:hover {
     
     background-color: var(--accent-shade);
     
@@ -104,7 +104,7 @@ div.certificationGrid .certification div.info a:hover {
     
 }
 
-div.certificationGrid .certification div.info a svg {
+div.certificationList .certification div.info a svg {
 
     width: 12px;
     height: 12px;

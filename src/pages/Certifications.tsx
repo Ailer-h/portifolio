@@ -1,4 +1,4 @@
-import CertificationGrid from "../components/CertificationGrid"
+import CertificationList from "../components/CertificationList"
 import { useUserPreferences } from "../context/UserPreferencesContext"
 import "../stylesheets/Certifications.css"
 
@@ -25,7 +25,7 @@ const Certifications = () => {
 
         <hr />
 
-        <CertificationGrid elements={certifications}/>
+        <CertificationList elements={certifications}/>
 
     </section></>
 

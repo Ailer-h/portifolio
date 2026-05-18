@@ -1,4 +1,4 @@
-import CardCarrousel from "../components/SkillCarrousel"
+import SkillCarrousel from "../components/SkillCarrousel"
 import { useUserPreferences } from "../context/UserPreferencesContext"
 import "../stylesheets/Skills.css"
 import { skills } from "../content/skills"
@@ -12,13 +12,13 @@ const Skills = () => {
         <h1 className="section-title">{t('nav.skills')}</h1>
 
         <h2>{t('skills.programmingLanguages')} <span>({skills.programmingLanguages.length})</span></h2>
-        <CardCarrousel elements={skills.programmingLanguages}/>
+        <SkillCarrousel elements={skills.programmingLanguages}/>
         <h2>{t('skills.techAndFrameworks')} <span>({skills.techAndFrameworks.length})</span></h2>
-        <CardCarrousel elements={skills.techAndFrameworks}/>
+        <SkillCarrousel elements={skills.techAndFrameworks}/>
         <h2>{t('skills.devopsAndTooling')} <span>({skills.devopsAndTooling.length})</span></h2>
-        <CardCarrousel elements={skills.devopsAndTooling}/>
+        <SkillCarrousel elements={skills.devopsAndTooling}/>
         <h2>{t('skills.languages')} <span>({skills.languages.length})</span></h2>
-        <CardCarrousel elements={skills.languages}/>
+        <SkillCarrousel elements={skills.languages}/>
 
     </section></>
 
