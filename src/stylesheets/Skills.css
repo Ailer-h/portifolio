@@ -10,3 +10,14 @@ section#skills h2 {
     margin-left: 40px;
 
 }
+
+@media (max-width: 768px) {
+
+    section#skills h2 {
+        text-align: center;
+        margin-left: 0px;
+
+    }
+    
+
+}

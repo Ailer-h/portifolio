@@ -142,6 +142,8 @@ button#backToTop {
 
   position: fixed;
 
+  z-index: 10;
+
   bottom: 32px;
   right: 32px;
 
@@ -255,5 +257,96 @@ button.secondary svg {
 button.secondary:hover svg {
 
   fill: var(--bg);
+
+}
+
+div.mobile-header {
+
+  display: none;
+
+}
+
+div.sidebar-backdrop {
+
+  display: none;
+
+}
+
+@media (max-width: 768px) {
+
+  div.grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 16px 24px;
+    scroll-margin-top: 56px;
+  }
+
+  div.mobile-header {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 16px;
+    height: 56px;
+
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--lines);
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+  }
+
+  div.mobile-header span {
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+  }
+
+  div.mobile-header .hamburger {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+
+  }
+
+  div.mobile-header .hamburger svg {
+
+    width: 24px;
+    height: 24px;
+    fill: var(--font-default);
+
+  }
+
+  div.sidebar-backdrop {
+
+    display: block;
+
+    position: fixed;
+    inset: 0;
+    z-index: 150;
+
+    background: rgba(0, 0, 0, 0.5);
+
+  }
+
+  button#backToTop {
+
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+
+  }
 
 }

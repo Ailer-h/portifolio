@@ -5,10 +5,14 @@ interface ProjectCardProps {
     techUsed: Array<String>
 
     headline: string
+    status: string
+    inDevelopment: boolean
+
+    onSeeMore: () => void
 
 }
 
-const ProjectCard = ({ bannerSrc, projectTitle, techUsed, headline }: ProjectCardProps) => {
+const ProjectCard = ({ bannerSrc, projectTitle, techUsed, headline, status, inDevelopment, onSeeMore }: ProjectCardProps) => {
 
     const excess = (techUsed.length - 4) > 0 ? techUsed.length - 4 : null
 
@@ -20,7 +24,7 @@ const ProjectCard = ({ bannerSrc, projectTitle, techUsed, headline }: ProjectCar
 
             <div className="content">
                 <p>{headline}</p>
-
+                <span className={`status ${inDevelopment ? "active" : ""}`}>{status}</span>
             </div>
 
             <div className="options">
@@ -32,7 +36,7 @@ const ProjectCard = ({ bannerSrc, projectTitle, techUsed, headline }: ProjectCar
                     }
                     { excess && <div>+{excess}</div> }
                 </div>
-                <button>See more</button>
+                <button onClick={onSeeMore}>See more</button>
             </div>
 
         </div></>

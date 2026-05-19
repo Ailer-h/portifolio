@@ -72,3 +72,48 @@ section#mainContent .hero p#description {
     width: 600px;
 
 }
+@media (max-width: 768px) {
+
+  section#mainContent .hero {
+
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+    justify-items: center;
+
+  }
+
+  section#mainContent .hero img {
+
+    width: 200px;
+    height: 200px;
+
+  }
+
+  section#mainContent .hero h1 {
+
+    font-size: 2em;
+
+  }
+
+  section#mainContent .hero p#description {
+
+    width: auto;
+
+  }
+
+  div#buttons {
+
+    justify-content: center;
+
+  }
+  
+  div#content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}
