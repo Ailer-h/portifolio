@@ -107,5 +107,13 @@ section#mainContent .hero p#description {
     justify-content: center;
 
   }
+  
+  div#content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 
 }

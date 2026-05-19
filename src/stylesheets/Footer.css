@@ -99,6 +99,7 @@ footer .credits p {
   footer .credits {
 
     flex-direction: column;
+    align-items: center;
 
   }
 
