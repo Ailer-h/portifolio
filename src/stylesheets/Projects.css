@@ -33,11 +33,28 @@ section#projects .project-grid .grid-item .content {
 
     padding: 8px;
 
+    display: flex;
+    flex-direction: column;
+
 }
 
 section#projects .project-grid .grid-item .content p {
 
     font-size: 1em;
+
+}
+
+section#projects .project-grid .grid-item .content .status {
+
+    font-size: 0.75em;
+    color: var(--font-secondary);
+    margin-top: auto;
+
+}
+
+section#projects .project-grid .grid-item .content .status.active {
+
+    color: var(--accent);
 
 }
 
