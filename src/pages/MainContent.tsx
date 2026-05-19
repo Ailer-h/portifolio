@@ -13,7 +13,7 @@ const MainContent = () => {
         <section id="mainContent">
             <div className="hero">
                 <img src={pfp} alt="" />
-                <div>
+                <div id="content">
                     <h2>{t('main.greeting')}</h2>
                     <h1>Henrique Ailer</h1>
                     <p id="role">{t('main.role')}</p>

@@ -1,0 +1,305 @@
+div.modal-overlay {
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px) brightness(50%);
+
+    transform: scaleY(0);
+
+}
+
+div.modal-overlay.open {
+
+    transform: scaleY(1);
+
+}
+
+div.modal-overlay .modal {
+
+    background-color: var(--bg);
+    border-radius: .5em;
+
+    box-shadow: var(--box-shadow);
+    border: .1px solid var(--lines-secondary);
+
+    padding: .7em 1em;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms ease;
+
+}
+
+div.modal-overlay .modal.open {
+
+    transform: scaleY(1);
+
+}
+
+div.modal-overlay .modal .modal-bar-top {
+
+    height: 2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: .5em;
+
+    border-bottom: .1px solid var(--lines-secondary);
+
+}
+
+div.modal-overlay .modal .modal-bar-top svg {
+
+    fill: var(--lines-secondary);
+
+    width: 2em;
+    height: 2em;
+
+    cursor: pointer;
+
+    transition: 100ms ease-in-out;
+
+}
+
+div.modal-overlay .modal .modal-bar-top svg:hover {
+
+    fill: var(--font-secondary);
+
+}
+
+div.modal-overlay .modal .modal-bar-top h1 {
+
+    color: var(--font-default);
+    font-size: 1.2em;
+
+}
+
+div.modal-overlay .modal .modal-banner {
+
+    margin: -.7em -1em 0;
+    height: 45%;
+    flex-shrink: 0;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: end;
+
+    padding: .7em 1em;
+
+}
+
+div.modal-overlay .modal .modal-banner::after {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+
+}
+
+div.modal-overlay .modal .modal-banner h1 {
+
+    z-index: 1;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.5em;
+    font-weight: normal;
+
+}
+
+div.modal-overlay .modal .modal-banner > svg {
+
+    position: absolute;
+    top: .7em;
+    right: .7em;
+    z-index: 1;
+
+    fill: hsl(0, 0%, 75%);
+
+    width: 2em;
+    height: 2em;
+
+    cursor: pointer;
+
+    transition: 100ms ease-in-out;
+
+}
+
+div.modal-overlay .modal .modal-banner > svg:hover {
+
+    fill: hsl(0, 0%, 95%);
+
+}
+
+div.modal-overlay .modal .modal-body {
+
+    flex: 1;
+    overflow-y: auto;
+    margin-top: .5em;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom {
+
+    height: 3em;
+
+    display: flex;
+    justify-content: end;
+
+    gap: 1em;
+
+    padding-top: .5em;
+    margin-top: .5em;
+
+    border-top: .1px solid var(--lines-secondary);
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button {
+
+    border: none;
+    padding: .1em .5em;
+
+    font-size: 1.2em;
+
+    cursor: pointer;
+
+    border-radius: .2em;
+
+    font-weight: bold;
+
+    transition: 100ms ease-in-out;
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button.confirm {
+
+    display: flex;
+    align-items: center;
+    gap: .3em;
+
+    background-color: var(--accent);
+    color: black;
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button.confirm svg {
+
+    width: 1em;
+    height: 1em;
+    fill: black;
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button.confirm:disabled,
+div.modal-overlay .modal .modal-bar-bottom button.confirm:disabled:hover {
+
+    background-color: var(--accent);
+    opacity: 0.4;
+    cursor: default;
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button.confirm:hover {
+
+    background-color: var(--accent-shade);
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button.cancel {
+
+    background-color: transparent;
+    border: 1px solid var(--font-default);
+    color: var(--font-default);
+
+}
+
+div.modal-overlay .modal .modal-bar-bottom button.cancel:hover {
+
+    background-color: var(--font-default);
+    color: var(--bg);
+
+}
+
+div.modal-overlay .modal .modal-body .modal-badge {
+
+    display: inline-block;
+
+    font-size: 0.75em;
+    padding: 2px 8px;
+
+    background-color: var(--accent);
+    color: black;
+
+    border-radius: 4px;
+
+    margin-bottom: .5em;
+
+}
+
+div.modal-overlay .modal .modal-body .modal-description {
+
+    color: var(--font-secondary);
+    margin-bottom: .5em;
+
+}
+
+div.modal-overlay .modal .modal-body .modal-dates {
+
+    font-size: 0.8em;
+    color: var(--font-secondary);
+    margin-top: auto;
+    margin-bottom: .3em;
+
+}
+
+div.modal-overlay .modal .modal-body .modal-tags {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: .5em;
+
+}
+
+div.modal-overlay .modal .modal-body .modal-tags > * {
+
+    font-size: 0.75em;
+    padding: 4px;
+
+    background-color: var(--bg-secondary);
+    border-radius: 4px;
+
+}
+
+@media (max-width: 768px) {
+
+    div.modal-overlay .modal {
+
+        width: 92vw !important;
+        height: 85vh !important;
+
+    }
+
+}

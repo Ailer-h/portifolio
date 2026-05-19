@@ -40,3 +40,20 @@ section#certifications .overview p {
     font-size: 1em;
 
 }
+@media (max-width: 768px) {
+
+  section#certifications .overview {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+  }
+
+  section#certifications .overview > * {
+
+    width: 100%;
+
+  }
+
+}
