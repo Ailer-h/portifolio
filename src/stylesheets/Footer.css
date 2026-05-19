@@ -74,3 +74,32 @@ footer .credits p {
     color: var(--font-secondary);
 
 }
+@media (max-width: 768px) {
+
+  footer {
+
+    height: auto;
+    padding: 16px 24px;
+
+  }
+
+  footer .cols {
+
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+  }
+
+  footer .cols div {
+
+    width: auto;
+
+  }
+
+  footer .credits {
+
+    flex-direction: column;
+
+  }
+
+}

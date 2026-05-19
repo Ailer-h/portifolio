@@ -124,3 +124,13 @@ div.carrousel .skill .barholder .bar {
     background-color: var(--accent-light);
 
 }
+@media (max-width: 768px) {
+
+    div.carrousel {
+
+        mask: linear-gradient(to right, var(--fade-left, black), black 8px, black calc(100% - 8px), var(--fade-right, black));
+        -webkit-mask: linear-gradient(to right, var(--fade-left, black), black 8px, black calc(100% - 8px), var(--fade-right, black));
+
+    }
+
+}

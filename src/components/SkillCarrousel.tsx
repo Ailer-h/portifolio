@@ -7,8 +7,6 @@ interface SkillCarrouselProps {
     elements: Skill[]
 }
 
-const SCROLL_AMOUNT = 500
-
 const SkillCarrousel = ({ elements }: SkillCarrouselProps) => {
 
     const { t } = useUserPreferences()
@@ -39,7 +37,13 @@ const SkillCarrousel = ({ elements }: SkillCarrouselProps) => {
     }, [])
 
     const scroll = (direction: "left" | "right") => {
-        scrollRef.current?.scrollBy({ left: direction === "left" ? -SCROLL_AMOUNT : SCROLL_AMOUNT, behavior: "smooth" })
+        const el = scrollRef.current
+        if (!el) return
+        const firstCard = el.firstElementChild as HTMLElement | null
+        const cardWidth = firstCard ? firstCard.offsetWidth + 16 : 216
+        const count = Math.max(1, Math.floor(el.clientWidth / cardWidth))
+        const amount = count * cardWidth
+        el.scrollBy({ left: direction === "left" ? -amount : amount, behavior: "smooth" })
     }
 
     return <div className="carrousel-wrapper">

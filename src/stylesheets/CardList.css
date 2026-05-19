@@ -119,3 +119,37 @@ div.cardList .card div.info p.headline {
     margin-top: 8px;
 
 }
+@media (max-width: 768px) {
+
+  div.cardList .card {
+
+    height: auto;
+    min-height: unset;
+    grid-template-columns: 1fr;
+
+  }
+
+  div.cardList .card img {
+
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+
+  }
+
+  div.cardList .card div.info {
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+
+  }
+
+  div.cardList .card div.info a {
+
+    position: static;
+    margin-top: 16px;
+    align-self: flex-start;
+
+  }
+
+}

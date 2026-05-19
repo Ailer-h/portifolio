@@ -292,3 +292,14 @@ div.modal-overlay .modal .modal-body .modal-tags > * {
     border-radius: 4px;
 
 }
+
+@media (max-width: 768px) {
+
+    div.modal-overlay .modal {
+
+        width: 92vw !important;
+        height: 85vh !important;
+
+    }
+
+}
