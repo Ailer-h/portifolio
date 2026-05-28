@@ -23,22 +23,22 @@ export const skills: Record<string, Skill[]> = {
         {
             skill: "PHP",
             level: {
-                label: "advanced",
-                number: 5
+                label: "intermediate",
+                number: 4
             }
         },
         {
             skill: "Typescript",
             level: {
-                label: "intermediate",
-                number: 4
+                label: "advanced",
+                number: 5
             }
         },
         {
             skill: "JavaScript",
             level: {
-                label: "intermediate",
-                number: 4
+                label: "advanced",
+                number: 5
             }
         },
         {

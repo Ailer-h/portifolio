@@ -32,6 +32,14 @@ export const translations = {
       contact: 'Get in touch',
       downloadCV: 'Download resume',
     },
+    projects: {
+      inDevelopment: "In Development",
+      finished: "Finished in",
+      seeMore: "See more",
+      privateCode: "Private code",
+      seeDemo: "See demo"
+    },
+
     skills: {
       programmingLanguages: 'Programming Languages',
       techAndFrameworks: 'Technologies & Frameworks',
@@ -102,6 +110,14 @@ export const translations = {
       contact: 'Entrar em contato',
       downloadCV: 'Baixar o currículo',
     },
+    projects: {
+      inDevelopment: "Em Desenvolvimento",
+      finished: "Finalizado em",
+      seeMore: "Ver mais",
+      privateCode: "Código privado",
+      seeDemo: "Ver demo"
+    },
+
     skills: {
       programmingLanguages: 'Linguagens de Programação',
       techAndFrameworks: 'Tecnologias & Frameworks',

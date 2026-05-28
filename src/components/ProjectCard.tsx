@@ -1,3 +1,5 @@
+import { useUserPreferences } from "../context/UserPreferencesContext"
+
 interface ProjectCardProps {
 
     bannerSrc: string
@@ -14,6 +16,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ bannerSrc, projectTitle, techUsed, headline, status, inDevelopment, onSeeMore }: ProjectCardProps) => {
 
+    const { t } = useUserPreferences()
     const excess = (techUsed.length - 4) > 0 ? techUsed.length - 4 : null
 
     return <><div className="grid-item">
@@ -36,7 +39,7 @@ const ProjectCard = ({ bannerSrc, projectTitle, techUsed, headline, status, inDe
                     }
                     { excess && <div>+{excess}</div> }
                 </div>
-                <button onClick={onSeeMore}>See more</button>
+                <button onClick={onSeeMore}>{t("projects.seeMore")}</button>
             </div>
 
         </div></>

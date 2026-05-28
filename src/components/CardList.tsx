@@ -1,6 +1,7 @@
 import type { Award } from "../content/awards"
 import type { Certification } from "../content/certifications"
 import { useUserPreferences } from "../context/UserPreferencesContext"
+import { formatDate } from "../lib/formatDate"
 import "../stylesheets/CardList.css"
 
 interface CertificationListProps {
@@ -10,7 +11,6 @@ interface CertificationListProps {
 const CertificationList = ({ elements }: CertificationListProps) => {
 
     const { t } = useUserPreferences()
-    const dateLocale = t('certifications.dateLocale')
 
     return <><div className="cardList">
 
@@ -26,13 +26,13 @@ const CertificationList = ({ elements }: CertificationListProps) => {
                             <hr />
 
                             <div style={{"display": "flex", "gap": "8px"}}>
-                                <h2 style={{"fontWeight": "normal"}}><b>{t('certifications.issuedOn')}:</b> {element.issueDate.toLocaleDateString(dateLocale, { month: 'long', year: 'numeric' })}</h2>
+                                <h2 style={{"fontWeight": "normal"}}><b>{t('certifications.issuedOn')}:</b> {formatDate(element.issueDate)}</h2>
 
                                 {
                                     'expirationDate' in element && element.expirationDate &&
                                     <>
                                         •
-                                        <h2 style={{"fontWeight": "normal"}}><b>{t('certifications.expiresOn')}:</b> {element.expirationDate.toLocaleDateString(dateLocale, { month: 'long', year: 'numeric' })}</h2>
+                                        <h2 style={{"fontWeight": "normal"}}><b>{t('certifications.expiresOn')}:</b> {formatDate(element.expirationDate)}</h2>
                                     </>
                                 }
                             </div>
