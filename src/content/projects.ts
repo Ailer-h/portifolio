@@ -12,7 +12,7 @@ export const projects = [
         codeIsPrivate: false,
         github: "https://github.com/Ailer-h/drachma",
         demo: "",
-        techUsed: ["React.js", "Typescript"],
+        techUsed: ["React.js", "Next.js", "Typescript"],
 
         content: {
             en: {

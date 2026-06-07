@@ -51,8 +51,15 @@ section#projects .project-grid .grid-item .content .status {
 }
 
 section#projects .project-grid .grid-item .content .status.active {
-
+    
     color: var(--accent);
+    font-weight: bold;
+    
+}
+[data-theme="light"] section#projects .project-grid .grid-item .content .status.active {
+
+    color: var(--font-default);
+    font-weight: bold;
 
 }
 
