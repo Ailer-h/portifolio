@@ -78,8 +78,8 @@ export const projects = [
         projectEnd: new Date(2026, 2),
         banner: typeassist,
         inDevelopment: false,
-        codeIsPrivate: true,
-        github: "",
+        codeIsPrivate: false,
+        github: "https://github.com/Ailer-h/TypeAssist",
         demo: "",
         techUsed: ["Python", "PyAutoGUI"],
 
