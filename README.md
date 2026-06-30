@@ -1,6 +1,7 @@
 # Portfolio
 
 My personal portfolio website, featuring my projects, skills, certifications, awards, and contact information. Fully responsive, bilingual (English/Portuguese), and supports dark and light themes.
+You can access it [here](https://henriqueailer.vercel.app/).
 
 ## About the project
 
@@ -14,37 +15,6 @@ Sections:
 - **Certifications** — list with issue and expiry dates
 - **Awards** — highlighted academic achievements
 - **Contact** — social links with copy-to-clipboard
-
-## How to use?
-
-To run it locally:
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/Ailer-h/portifolio.git
-cd portifolio
-```
-
-2. Install dependencies
-
-```bash
-npm install
-```
-
-3. Start the development server
-
-```bash
-npm run dev
-```
-
-4. Open `http://localhost:5173` in your browser
-
-To build for production:
-
-```bash
-npm run build
-```
 
 ## Used technologies
 
