@@ -96,15 +96,29 @@ export const skills: Record<string, Skill[]> = {
         {
             skill: "FastAPI",
             level: {
-                label: "basic",
+                label: "beginner",
                 number: 1
             }
         },
         {
             skill: "Django",
             level: {
-                label: "basic",
+                label: "beginner",
                 number: 1
+            }
+        },
+        {
+            skill: "Tkinter",
+            level: {
+                label: "beginner",
+                number: 2
+            }
+        },
+        {
+            skill: "Pystray",
+            level: {
+                label: "beginner",
+                number: 2
             }
         },
     ],
@@ -121,6 +135,13 @@ export const skills: Record<string, Skill[]> = {
             skill: "Docker",
             level: {
                 label: "beginner",
+                number: 2
+            }
+        },
+        {
+            skill: "Claude Code",
+            level: {
+                label: "intermediate",
                 number: 2
             }
         },

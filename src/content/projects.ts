@@ -2,10 +2,34 @@ import Drachma from "../assets/banners/drachma.webp"
 import erpSimulator from "../assets/banners/erp_simulator.webp"
 import pastelaria from "../assets/banners/pastelaria.webp"
 import typeassist from "../assets/banners/typeassist.webp"
+import claudeMonitor from "../assets/banners/claude_monitor.png"
 
 export const projects = [
     {
-        projectStart: new Date(2024, 3),
+        projectStart: new Date(2026, 6),
+        projectEnd: new Date(2026, 6),
+        banner: claudeMonitor,
+        inDevelopment: false,
+        codeIsPrivate: false,
+        github: "https://github.com/Ailer-h/claude-monitor",
+        demo: "",
+        techUsed: ["Python", "Claude Code", "Tkinter", "pystray"],
+
+        content: {
+            en: {
+                name: "Claude Monitor",
+                description: "A simple system that makes it easier to know at a glance if I need to come back to claude's window even if I'm working on another task.",
+                headline: "A lightweight software to monitor the status of my claude sessions."
+            },
+            pt: {
+                name: "Monitoramento de Claude",
+                description: "Um sistema simples que facilita saber, rapidamente, se preciso voltar à janela do Claude, mesmo enquanto trabalho em outra tarefa.",
+                headline: "Um sistema leve para monitorar o status das minhas sessões do claude."
+            }
+        }
+    },
+    {
+        projectStart: new Date(2025, 3),
         projectEnd: "",
         banner: Drachma,
         inDevelopment: true,
