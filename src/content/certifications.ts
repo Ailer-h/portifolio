@@ -1,6 +1,7 @@
 import Google from "../assets/logos/google.webp"
 import SIC from "../assets/logos/SIC.webp"
 import Cisco from "../assets/logos/cisco.webp"
+import Anthropic from "../assets/logos/anthropic.webp"
 
 export interface Certification {
 
@@ -33,5 +34,12 @@ export const certifications: Array<Certification> = [
         issueDate: new Date(2024, 11),
         credentialURL: "https://www.credly.com/badges/ca2dd780-f3ff-4105-8899-055bc36bbde2/linked_in_profile",
         logo: Google
+    },
+    {
+        name: "Al Fluency Framework & Foundations",
+        issuingOrg: "Anthropic",
+        issueDate: new Date(2026, 7),
+        credentialURL: "https://verify.skilljar.com/c/kwyt8ymj54c6",
+        logo: Anthropic
     }
 ]
