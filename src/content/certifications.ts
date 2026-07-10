@@ -38,7 +38,7 @@ export const certifications: Array<Certification> = [
     {
         name: "Al Fluency Framework & Foundations",
         issuingOrg: "Anthropic",
-        issueDate: new Date(2026, 7),
+        issueDate: new Date(2026, 6),
         credentialURL: "https://verify.skilljar.com/c/kwyt8ymj54c6",
         logo: Anthropic
     }
