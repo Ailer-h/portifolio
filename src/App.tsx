@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Sidebar from './components/Sidebar'
-import { UserPreferencesProvider } from './context/UserPreferencesContext'
+import { UserPreferencesProvider, isSupportedLanguage, type Language } from './context/UserPreferencesContext'
 
 import ScrollToSection from './lib/scroll'
 
@@ -17,6 +17,10 @@ function App() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
   const mainRef = useRef<HTMLElement>(null)
 
+  const params = new URLSearchParams(window.location.search)
+  const langParam = params.get('lang')
+  const defaultLanguage: Language = isSupportedLanguage(langParam) ? langParam : 'en'
+
   useEffect(() => {
     const el = mainRef.current
     if (!el) return
@@ -26,7 +30,7 @@ function App() {
   }, [])
 
   return (
-    <UserPreferencesProvider>
+    <UserPreferencesProvider defaultLanguage={defaultLanguage}>
       <div className="grid">
         <Sidebar mobileOpen={mobileSidebarOpen} onClose={() => setMobileSidebarOpen(false)} />
 

@@ -279,6 +279,7 @@ div.sidebar-backdrop {
   }
 
   section {
+    min-height: 100dvh;
     padding: 16px 24px;
     scroll-margin-top: 56px;
   }

@@ -1,7 +1,14 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react'
-import { translations, type Language } from '../content'
+import { translations } from '../content'
 
 export type Theme = 'light' | 'dark'
+
+export type Language = 'en' | 'pt'
+
+export const SUPPORTED_LANGUAGES: Language[] = ['en', 'pt']
+
+export const isSupportedLanguage = (value: string | null): value is Language =>
+  SUPPORTED_LANGUAGES.includes(value as Language)
 
 interface UserPreferences {
   theme: Theme
@@ -13,7 +20,7 @@ interface UserPreferences {
 
 const UserPreferencesContext = createContext<UserPreferences | null>(null)
 
-export const UserPreferencesProvider = ({ children }: { children: ReactNode }) => {
+export const UserPreferencesProvider = ({ children, defaultLanguage }: { children: ReactNode; defaultLanguage?: Language }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     const saved = localStorage.getItem('theme') as Theme | null
     const initial = saved ?? 'dark'
@@ -22,7 +29,9 @@ export const UserPreferencesProvider = ({ children }: { children: ReactNode }) =
   })
 
   const [language, setLanguage] = useState<Language>(() => {
-    return (localStorage.getItem('language') as Language | null) ?? 'en'
+    if (defaultLanguage) return defaultLanguage
+    const saved = localStorage.getItem('language')
+    return isSupportedLanguage(saved) ? saved : 'en'
   })
 
   useEffect(() => {

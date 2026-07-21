@@ -80,6 +80,7 @@ footer .credits p {
 
     height: auto;
     padding: 16px 24px;
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
 
   }
 

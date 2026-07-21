@@ -74,6 +74,13 @@ section#mainContent .hero p#description {
 }
 @media (max-width: 768px) {
 
+  section#mainContent {
+
+    align-items: flex-start;
+    padding-top: 40px;
+
+  }
+
   section#mainContent .hero {
 
     grid-template-columns: 1fr;

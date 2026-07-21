@@ -1,6 +1,4 @@
 div.cardList {
-    
-    max-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -11,8 +9,6 @@ div.cardList {
 
     gap: 16px;
 
-    overflow-y: auto;
-    
 }
 
 div.cardList .card {
