@@ -9,18 +9,18 @@ section#projects .project-grid {
 }
 
 section#projects .project-grid .grid-item {
-    
+
     background-color: var(--bg-tertiary);
-    
-    height: 300px;
-    
+
+    min-height: 300px;
+
     box-shadow: var(--box-shadow);
-    
+
     border-radius: 8px;
-    
+
     display: flex;
     flex-direction: column;
-    
+
 }
 
 section#projects .project-grid .grid-item .content {
